@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Seam/Desktop/cseku_apl_24_230201/Task 2/student management system/src</OriginalElement>
+  <nodes>
+    <node x="2338.794066317627" y="535.5881326352529">service.NotificationService</node>
+    <node x="1701.0951134380457" y="80.24594108625524">core.Enrollment</node>
+    <node x="1435.7897033158815" y="378.19797120418843">service.interfaces.IEnrollmentService</node>
+    <node x="1212.4910159976737" y="561.7382198952879">service.PaymentService</node>
+    <node x="2078.5253054101213" y="418.84380453752175">service.interfaces.INotificationService</node>
+    <node x="872.7798237611719" y="529.0314136125658">service.interfaces.IPaymentService</node>
+    <node x="1790.6672285684067" y="529.0314136125658">service.EnrollmentService</node>
+    <node x="1648.2592052726213" y="712.1588132635254">core.Student</node>
+    <node x="1977.5266357951243" y="792.1588132635254">core.GraduateStudent</node>
+    <node x="2376.794066317627" y="749.786173250833">core.Course</node>
+    <node x="2204.794066317627" y="90.09947643979056">core.Notification</node>
+    <node x="1038.4697498545665" y="136.22513089005236">core.Payment</node>
+    <node x="1141.5241783013382" y="792.1588132635254">core.UndergraduateStudent</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="service.NotificationService" target="service.interfaces.INotificationService" relationship="REALIZATION">
+      <point x="-164.0" y="0.0" />
+      <point x="2227.525" y="607.5881326352529" />
+      <point x="-15.0003054101212" y="32.0" />
+    </edge>
+    <edge source="service.EnrollmentService" target="core.Enrollment" relationship="DEPENDENCY">
+      <point x="-156.50022856840678" y="-4.1361256580785266E-4" />
+      <point x="1770.0" y="588.031" />
+      <point x="1770.0" y="500.344" />
+      <point x="1859.595" y="500.344" />
+      <point x="-1.1343804567331972E-4" y="112.00005891374474" />
+    </edge>
+    <edge source="service.interfaces.INotificationService" target="core.Notification" relationship="DEPENDENCY">
+      <point x="-3.0541012120011146E-4" y="32.000195462478246" />
+      <point x="2242.525" y="506.0" />
+      <point x="2435.794" y="506.0" />
+      <point x="-6.631762698816601E-5" y="137.9995235602094" />
+    </edge>
+    <edge source="service.PaymentService" target="core.Payment" relationship="DEPENDENCY">
+      <point x="-153.0000159976737" y="-2.198952878416094E-4" />
+      <point x="1196.0" y="620.738" />
+      <point x="1196.0" y="460.698" />
+      <point x="1220.47" y="460.698" />
+      <point x="2.5014543348333973E-4" y="137.99986910994767" />
+    </edge>
+    <edge source="service.EnrollmentService" target="service.interfaces.IEnrollmentService" relationship="REALIZATION">
+      <point x="-156.5" y="14.999586387434192" />
+      <point x="1592.2897033158815" y="603.031" />
+      <point x="0.0" y="45.0" />
+    </edge>
+    <edge source="service.NotificationService" target="core.Notification" relationship="DEPENDENCY">
+      <point x="-6.631762698816601E-5" y="-72.00013263525295" />
+      <point x="2502.794" y="506.0" />
+      <point x="2435.794" y="506.0" />
+      <point x="-6.631762698816601E-5" y="137.9995235602094" />
+    </edge>
+    <edge source="service.interfaces.IPaymentService" target="core.Payment" relationship="DEPENDENCY">
+      <point x="153.0001762388281" y="-4.1361256580785266E-4" />
+      <point x="1196.0" y="574.031" />
+      <point x="1196.0" y="460.698" />
+      <point x="1220.47" y="460.698" />
+      <point x="2.5014543348333973E-4" y="137.99986910994767" />
+    </edge>
+    <edge source="core.GraduateStudent" target="core.Student" relationship="GENERALIZATION">
+      <point x="-182.49963579512405" y="1.8673647457490006E-4" />
+      <point x="147.49979472737868" y="1.8673647457490006E-4" />
+    </edge>
+    <edge source="service.interfaces.IEnrollmentService" target="core.Enrollment" relationship="DEPENDENCY">
+      <point x="156.50029668411844" y="2.8795811545023753E-5" />
+      <point x="1770.0" y="423.198" />
+      <point x="1770.0" y="500.344" />
+      <point x="1859.595" y="500.344" />
+      <point x="-1.1343804567331972E-4" y="112.00005891374474" />
+    </edge>
+    <edge source="core.UndergraduateStudent" target="core.Student" relationship="GENERALIZATION">
+      <point x="-1.7830133833740547E-4" y="32.000186736474575" />
+      <point x="1346.024" y="953.659" />
+      <point x="1961.0" y="953.659" />
+      <point x="1961.0" y="824.159" />
+      <point x="147.49979472737868" y="1.8673647457490006E-4" />
+    </edge>
+    <edge source="service.PaymentService" target="service.interfaces.IPaymentService" relationship="REALIZATION">
+      <point x="-153.0" y="-31.70721989528795" />
+      <point x="153.0" y="14.999586387434192" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.8727272727272727" showDependencies="true" x="1779.5" y="536.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
