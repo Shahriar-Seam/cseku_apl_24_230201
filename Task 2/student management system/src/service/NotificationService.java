@@ -1,49 +1,22 @@
 package service;
 
 import core.Notification;
-import service.interfaces.INotificationService;
 
 /**
- * Implementation of the {@link INotificationService} interface.
- * This class follows SRP and OCP by allowing new notification types to be added easily.
+ * The NotificationService class is responsible for sending notifications to students.
+ * It adheres to the Single Responsibility Principle (SRP) by focusing solely on
+ * the notification sending functionality. It also follows the Open/Closed Principle (OCP)
+ * by allowing new types of notifications to be added without modifying this class.
  */
-public class NotificationService implements INotificationService {
+public class NotificationService {
 
     /**
-     * Sends a notification to the student based on the notification type.
+     * Sends a notification to the student based on the provided notification object.
      *
      * @param notification the notification to be sent
-     * @throws UnsupportedOperationException if the notification type is not supported
      */
-    @Override
     public void sendNotification(Notification notification) {
-        switch (notification.getType()) {
-            case EMAIL:
-                sendEmail(notification);
-                break;
-            case SMS:
-                sendSMS(notification);
-                break;
-            default:
-                throw new UnsupportedOperationException("Notification type not supported");
-        }
-    }
-
-    /**
-     * Sends an email notification to the specified student.
-     *
-     * @param notification the notification containing the message and recipient details
-     */
-    private void sendEmail(Notification notification) {
-        System.out.println("Sending Email to " + notification.getStudentId() + ": " + notification.getMessage());
-    }
-
-    /**
-     * Sends an SMS notification to the specified student.
-     *
-     * @param notification the notification containing the message and recipient details
-     */
-    private void sendSMS(Notification notification) {
-        System.out.println("Sending SMS to " + notification.getStudentId() + ": " + notification.getMessage());
+        // Delegate the responsibility of sending the notification to the notification object.
+        notification.sendNotification();
     }
 }

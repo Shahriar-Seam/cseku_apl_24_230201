@@ -35,12 +35,12 @@ public class Main {
         enrollmentService.enrollStudent(enrollment2);
 
         // Initialize the notification service
-        INotificationService notificationService = new NotificationService();
+        NotificationService notificationService = new NotificationService();
 
         // Create notifications for each student
         // Notification includes an ID, student ID, message, and type (EMAIL or SMS)
-        Notification notification1 = new Notification("N001", undergradStudent.getStudentId(), "Welcome to the course!", EMAIL);
-        Notification notification2 = new Notification("N002", gradStudent.getStudentId(), "Your enrollment is confirmed!", SMS);
+        Notification notification1 = new EmailNotification("N001", undergradStudent.getStudentId(), "Welcome to the course!");
+        Notification notification2 = new SMSNotification("N002", gradStudent.getStudentId(), "Your enrollment is confirmed!");
 
         // Send the notifications to each student
         notificationService.sendNotification(notification1);
