@@ -92,7 +92,7 @@ The project's architecture is illustrated in the UML diagram below, which provid
 ![UML Diagram](src.png)
 
 ## Javadoc Documentation
-For detailed API documentation, please refer to the [Javadoc](https://student-management-system-lime.vercel.app/). This documentation provides insights into the classes, methods, and interfaces used throughout the project, making it easier for developers to understand and utilize the code.
+For detailed API documentation, please refer to the [Javadoc](https://student-management-system-lime.vercel.app/" target="_blank). This documentation provides insights into the classes, methods, and interfaces used throughout the project, making it easier for developers to understand and utilize the code.
 
 ## Application of SOLID Principles
 - **Single Responsibility Principle (SRP)**: Each class in the project has a single responsibility. For example, the `Enrollment` class handles student enrollment details, while the `Payment` class manages payment information.
